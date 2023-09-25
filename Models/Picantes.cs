@@ -1,4 +1,4 @@
-﻿namespace Pizzeria.Models
+﻿namespace PizzeriaPlace.Models
 {
     public enum Picantes
     {

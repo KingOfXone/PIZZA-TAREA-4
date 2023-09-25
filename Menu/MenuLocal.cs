@@ -1,8 +1,8 @@
-﻿using Pizzeria.Models;
+﻿using PizzeriaPlace.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Pizzeria.BLL
+namespace PizzeriaPlace.BLL
 {
     public class MenuLocal
     {

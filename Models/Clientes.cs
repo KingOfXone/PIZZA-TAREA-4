@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pizzeria.Models
+namespace PizzeriaPlace.Models
 {
     public class Clientes
     {
