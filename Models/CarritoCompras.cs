@@ -1,6 +1,6 @@
 ﻿namespace PizzeriaPlace.Models
 {
-    public class CestaDCompras
+    public class CarritoCompras
     {
         public Clientes clientes { get; set; } = new Clientes();
         public List<int> Pedidos { get; set; } = new List<int>();

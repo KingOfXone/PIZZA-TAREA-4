@@ -1,6 +1,6 @@
 ﻿namespace PizzeriaPlace.Models
 {
-    public class InterfazUsuario
+    public class IUsuario
     {
         public bool MostrarCesta { get; set; } = true;
     }

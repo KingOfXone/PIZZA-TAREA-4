@@ -5,9 +5,9 @@ namespace PizzeriaPlace.Models
     public class Estados
     {
         public MenuL Menu { get; set; }  = new MenuL();
-        public CestaDCompras cestaDCompras { get; set; } = new CestaDCompras();
-        public InterfazUsuario Interfaz { get; set; } = new InterfazUsuario();
-        public decimal PrecioTotal => cestaDCompras.Pedidos.Sum(Id => Menu.ObtenerPizzas(Id)!.Precio);
+        public CarritoCompras CarritoCompras { get; set; } = new CarritoCompras();
+        public IUsuario Interfaz { get; set; } = new IUsuario();
+        public decimal PrecioTotal => CarritoCompras.Pedidos.Sum(Id => Menu.ObtenerPizzas(Id)!.Precio);
 
 
     }
