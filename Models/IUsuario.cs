@@ -2,6 +2,6 @@
 {
     public class IUsuario
     {
-        public bool MostrarCesta { get; set; } = true;
+        public bool MostrarCarritoCompras { get; set; } = true;
     }
 }
