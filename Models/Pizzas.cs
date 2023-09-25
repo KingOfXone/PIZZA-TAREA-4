@@ -1,4 +1,4 @@
-﻿namespace PizzeriaPlace.Models
+﻿namespace Pizzeria.Models
 {
     public class Pizzas
     {

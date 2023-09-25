@@ -1,6 +1,6 @@
-﻿using PizzeriaPlace.BLL;
+﻿using Pizzeria.BLL;
 
-namespace PizzeriaPlace.Models
+namespace Pizzeria.Models
 {
     public class Estados
     {

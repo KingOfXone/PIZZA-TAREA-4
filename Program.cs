@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
 
-namespace PizzeriaPlace
+namespace Pizzeria
 {
     public class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace PizzeriaPlace.Clients
+namespace Pizzeria.Clients
 {
 	public static class ExtDepuracion
 	{
