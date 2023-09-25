@@ -6,8 +6,8 @@
         public string Nombre { get; }
         public string Descripcion { get; }
         public decimal Precio { get; }
-        public Picantes Picante { get; }
-        public Pizzas1(int Id, string Nombre, string Descricpion,decimal Precio, Picantes Picantes)
+        public p2 Picante { get; }
+        public Pizzas1(int Id, string Nombre, string Descricpion,decimal Precio, p2 Picantes)
         {
             this.Id = Id;
             this.Nombre = Nombre;

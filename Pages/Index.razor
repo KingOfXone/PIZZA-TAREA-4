@@ -24,7 +24,7 @@
             <img src="https://i.pinimg.com/236x/5e/5c/06/5e5c06afeed213a39e8e7df49ac263a0.jpg" alt="@pizza.Picante" />
 		</div>
 		<div class="col">
-			<button class="btn btn-success pl-4 pr-4"
+			<button class="btn btn-danger pl-4 pr-4"
 			@onclick="@(() => AgregarALaCesta(pizza))">
 				Ordenar
 			</button>
@@ -82,11 +82,6 @@
          @bind-Value="@estados.cestaDCompras.clientes.Nombre"/>
       </div>
 
-      <div class="row mb-2">
-            <label class="col-2" for="calle">Calle:</label>
-            <InputText class="form-control col-6" placeholder="Nombre de la calle y numero de la casa" id="calle" @bind-Value="estados.cestaDCompras.clientes.Calle" />
-            <ValidationMessage For="@(() => estados.cestaDCompras.clientes.Calle)" />
-      </div>
 
         <div class="row mb-2">
             <label class="col-2" for="ciudad">Ciudad:</label>
@@ -114,9 +109,9 @@
 
     protected override void OnInitialized()
     {
-        estados.Menu.Add(new Pizzas1(1, "Peperroni", "Pizza Picante", 450M, Picantes.Picante));
-        estados.Menu.Add(new Pizzas1(2, "Margarita", "Pizza No Picante", 300M, Picantes.Nada));
-        estados.Menu.Add(new Pizzas1(3, "Diablosa", "Pizza Muy Picante", 500M, Picantes.Muy_Picante));
+        estados.Menu.Add(new Pizzas1(1, "Peperroni", "Pizza con peperoni", 350M, p2.Nada));
+        estados.Menu.Add(new Pizzas1(2, "Margarita", "Pizza con tomates y miel", 300M, p2.Dulce));
+        estados.Menu.Add(new Pizzas1(3, "Diablosa", "Pizza con chiles habaneros", 500M, p2.Muy_Picante));
     }
 
     private List<string> NombreCiudades = new List<string>
@@ -143,7 +138,7 @@
         "Miches"
     };
 
-	private string PicanteImagenes(Picantes picante) => $"{picante.ToString().ToLower()}.png";
+	private string PicanteImagenes(p2 picante) => $"{picante.ToString().ToLower()}.png";
 
 	private void AgregarALaCesta(Pizzas1 pizza) => estados.cestaDCompras.Add(pizza.Id);
 
