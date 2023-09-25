@@ -84,12 +84,12 @@
 
 
         <div class="row mb-2">
-            <label class="col-2" for="ciudad">Ciudad:</label>
-            <InputSelect class="form-select" id="ciudad" @bind-Value="estados.cestaDCompras.clientes.Ciudad">
-                <option value="">Elija la ciudad de procedencia</option>
-                @foreach (var ciudad in NombreCiudades)
+            <label class="col-2" for="Servicio">Servicio:</label>
+            <InputSelect class="form-select" id="Servicio" @bind-Value="estados.cestaDCompras.clientes.Ciudad">
+                <option value="">Que tanto le gusto el servicio?</option>
+                @foreach (var Servicio in Servicio)
                 {
-                    <option value="@ciudad">@ciudad</option>
+                    <option value="@Servicio">@Servicio</option>
                 }
             </InputSelect>
             <ValidationMessage For="@(() => estados.cestaDCompras.clientes.Ciudad)" />
@@ -114,28 +114,12 @@
         estados.Menu.Add(new Pizzas1(3, "Diablosa", "Pizza con chiles habaneros", 500M, p2.Muy_Picante));
     }
 
-    private List<string> NombreCiudades = new List<string>
+    private List<string> Servicio = new List<string>
     {
-        "Santo Domingo",
-        "Santiago de los Caballeros",
-        "San Francisco de Macorís",
-        "Samaná",
-        "Higüey",
-        "La Romana",
-        "Puerto Plata",
-        "Jarabacoa",
-        "Constanza",
-        "Bonao",
-        "Cotuí",
-        "Sosua",
-        "Cabarete",
-        "Boca Chica",
-        "Barahona",
-        "Baní",
-        "Las Galeras",
-        "Las Terrenas",
-        "Juan Dolio",
-        "Miches"
+        "(1-3) malo",
+        "(4-6) Regular",
+        "(7-9) Muy bueno",
+        "(10) Excelente",
     };
 
 	private string PicanteImagenes(p2 picante) => $"{picante.ToString().ToLower()}.png";
