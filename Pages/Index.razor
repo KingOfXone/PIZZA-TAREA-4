@@ -114,9 +114,9 @@
 
     protected override void OnInitialized()
     {
-        estados.Menu.Add(new Pizzas(1, "Peperroni", "Pizza Picante", 450M, Picantes.Picante));
-        estados.Menu.Add(new Pizzas(2, "Margarita", "Pizza No Picante", 300M, Picantes.Nada));
-        estados.Menu.Add(new Pizzas(3, "Diablosa", "Pizza Muy Picante", 500M, Picantes.Muy_Picante));
+        estados.Menu.Add(new Pizzas1(1, "Peperroni", "Pizza Picante", 450M, Picantes.Picante));
+        estados.Menu.Add(new Pizzas1(2, "Margarita", "Pizza No Picante", 300M, Picantes.Nada));
+        estados.Menu.Add(new Pizzas1(3, "Diablosa", "Pizza Muy Picante", 500M, Picantes.Muy_Picante));
     }
 
     private List<string> NombreCiudades = new List<string>
@@ -145,7 +145,7 @@
 
 	private string PicanteImagenes(Picantes picante) => $"{picante.ToString().ToLower()}.png";
 
-	private void AgregarALaCesta(Pizzas pizza) => estados.cestaDCompras.Add(pizza.Id);
+	private void AgregarALaCesta(Pizzas1 pizza) => estados.cestaDCompras.Add(pizza.Id);
 
 	private void RemoverDeLaCesta(int pos) => estados.cestaDCompras.RemoveAt(pos);
 
